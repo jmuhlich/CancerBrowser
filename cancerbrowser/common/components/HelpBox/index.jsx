@@ -44,7 +44,10 @@ class HelpBox extends React.Component {
   renderCollapsed() {
     return (
       <div className="toggle" onClick={ this.handleExpandClick }>
-        show help
+        <svg className="info-icon">
+          <circle cx="20" cy="20" r="18" stroke="blue" strokeWidth="4"
+                  fill="none" />
+        </svg>
       </div>
     );
   }
